@@ -40,6 +40,15 @@ nav div ul li a:hover{
 opacity: 70%;
 }
 
+.judul ul li{
+    list-style: none;
+}
+
+.judul ul li a{
+    color: black;
+    text-decoration: none;
+}
+
 .jumbotron{
     background-image: url(../images/header2.jpg);
     background-size: cover;
@@ -61,6 +70,7 @@ opacity: 70%;
     position: absolute;
     bottom: 0;
 }
+
 
 .jumbotron .container{
     color: black;
@@ -230,6 +240,7 @@ opacity: 70%;
 }
 
 .footer{
+    padding: 40px;
     margin-top: 50px;
     background-color: #1B2430;
     color: white;
@@ -247,6 +258,12 @@ footer div ul li{
 footer div ul li a{
     text-decoration: none;
     color: white;
+    transition: 0.3s;
+}
+
+footer div ul li a:hover{
+    text-decoration: none;
+    color: #D2001A;
 }
 
 footer a{
@@ -276,6 +293,7 @@ transition: 0.3s;
 
 #contact{
     margin-top: 15rem;
+    margin-bottom: 15rem;
 }
 
 #contact input{
@@ -308,4 +326,8 @@ transition: 0.3s;
 
 .kontak{
     margin-left: 210px;
+}
+
+#card-1{
+    max-height: 20rem;
 }

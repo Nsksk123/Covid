@@ -8,7 +8,7 @@
 </div>
 
 
-<div class="container mb-5">
+<div class="container mb-5 shadow p-5">
   <h1>Berita Hari Ini</h1>
     <div class="row">
 
@@ -44,6 +44,43 @@ wp_reset_postdata();
 ?>
 </div>
 </div>
+
+<div class="container shadow p-5">
+  <div class="row">
+    <h1>Mungkin yang Kamu Sukai</h1>
+    <?php
+
+    $latest = new WP_Query([
+      'post_type' => 'post',
+      'post_status' => 'publish',
+      'posts_per_page' => 4
+    ]);
+
+    if($latest->have_posts()):
+      while($latest->have_posts()):
+        $latest->the_post();
+
+    ?>
+
+        <div class="col-3">
+          <div class="card" id="card-1">
+            <img src="<?php the_post_thumbnail_url()?>" alt="">
+            <div class="card-body">
+              <h5 class="card-title"><?php get_template_part('tamplate-parts/entry', 'title')?></h5>
+              <div class="card-text"><?php the_time()?></div>
+            </div>
+          </div>
+        </div>
+
+<?php
+      endwhile;
+    endif;
+
+    wp_reset_postdata();
+?>
+  </div>
+</div>
+
 
 
 

@@ -1,6 +1,13 @@
 <?php get_header();?>
-<div class="container mb-5">
+<div class="jumbotron jumbotron-fluid mb-5">
+  <div class="container">
+    <h1 class="display-4">Berita Covid-19 Di Indonesia</h1>
+    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+  </div>
+</div>
+<div class="container container shadow p-5 mt-5">
     <div class="row">
+        <h1 class="judul"><?php the_category()?></h1>
 <?php 
 
 if(have_posts()):

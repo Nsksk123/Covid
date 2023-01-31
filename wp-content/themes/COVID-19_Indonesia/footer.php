@@ -2,14 +2,14 @@
     <div class="container">
       <div class="row">
         <div class="col-4">
-          <span>Menyajikan berita terhangat</span>
+          <span>Menyajikan berita tentang Covid-19 Di Indonesia</span>
         </div>
         <div class="col-4">
           <h4>Telusuri</h4>
           <?php wp_nav_menu()?>
         </div>
         <div class="col-4">
-          <h4>Contact</h4>
+          <h4>Ikuti kami</h4>
           <a href="#"><i class="bi bi-instagram"></i></a>
           <a href="#"><i class="bi bi-facebook"></i></a>
           <a href="#"><i class="bi bi-twitter"></i></a>
